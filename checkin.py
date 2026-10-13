@@ -177,7 +177,7 @@ def validate_cookie(cookie: str) -> Tuple[bool, str]:
     if "koa:sess" not in keys and "gld:sess" not in keys:
         return False, "Cookie 缺少必要字段: koa:sess 或 gld:sess"
     if "koa:sess.sig" not in keys and "gld:sess.sig" not in keys:
-        return False, "Cookie 缺少必要字段: koa:sess.sig 或 gld:sess.sig"
+        return False, "Cookie 缺少必要字段: koa:sess.sig 或 gld:sess.sig" 
 
     return True, ""
 
